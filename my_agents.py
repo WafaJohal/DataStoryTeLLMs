@@ -122,8 +122,8 @@ else:
         "Select a Sklearn Dataset:",
         ("iris", "diabetes", "digits", "linnerud", "wine", "breast cancer")
     )
-    df = load_sklearn_dataset(dataset_choice)
-    st.write("Dataset Preview:", df.head())
+df = load_sklearn_dataset("iris")
+st.write("Dataset Preview:", df.head())
 
 # Pass Dataset to Agents
 if df is not None:
